@@ -1,0 +1,23 @@
+Members
+load all members
+load members by page
+search members
+create a new member
+delete an existing member
+update member details
+
+
+Books
+load all books
+load books by page
+search books
+add a new book
+update book detais
+
+
+Members.IssueNotes
+create a new issue note
+
+Members.ReturnNotes
+create a new return note
+

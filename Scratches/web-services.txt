@@ -1,0 +1,23 @@
+Members
+load all members-GET / members
+load members by page-GET / members?size={size}&page={page}
+search members-GET / members?q={query}
+get member Details- GET / members/{member-id}
+create a new member-POST  /members
+delete an existing member-DELETE / members/{member-id}
+update member details-PATCH / members
+
+
+Books
+load all books-GET / books
+load books by page-GET / books
+search books-GET / books
+add a new book-POST / books
+update book details-PATCH / books
+
+
+Members.IssueNotes
+create a new issue note-POST/issue-notes
+
+Members.ReturnNotes
+create a new return note-POST/return-notes
