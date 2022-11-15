@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:mysql://localhost:3306/dep9_lms?createDatabaseIfNotExists=true</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="dep9_sql@localhost" uuid="9a3626f0-f87a-4fb2-93d1-bf06e187d0a7">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/dep9_sql?createDatabaseIfNotExist=true</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

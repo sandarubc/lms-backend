@@ -5,7 +5,7 @@ import jakarta.json.bind.annotation.JsonbPropertyOrder;
 import java.io.Serializable;
 
 @JsonbPropertyOrder({"id","name","address","contact"})
-public class MembersDTO implements Serializable {
+public class MemberDTO implements Serializable {
 
     private String id;
     private String name;
@@ -44,11 +44,11 @@ public class MembersDTO implements Serializable {
         this.contact = contact;
     }
 
-    public MembersDTO(){
+    public MemberDTO(){
 
     }
 
-    public MembersDTO(String id, String name, String address, String contact) {
+    public MemberDTO(String id, String name, String address, String contact) {
         this.id = id;
         this.name = name;
         this.address = address;
