@@ -9,6 +9,7 @@ import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 import lk.ijse.dep9.lmsbackend.api.util.HttpServlet2;
 import lk.ijse.dep9.lmsbackend.dto.MemberDTO;
+import lk.ijse.dep9.lmsbackend.exception.ResponseStatusException;
 
 import javax.sql.DataSource;
 import java.io.IOException;
@@ -48,7 +49,7 @@ public class MemberServlet extends HttpServlet2 {
             String page = req.getParameter("page");
             if(query!=null && size !=null && page !=null){
                 if(!size.matches("\\d+")||!page.matches("\\d+")){
-                    resp.sendError(HttpServletResponse.SC_BAD_REQUEST);
+                    throw new ResponseStatusException(400,"Invalid Page or Size ");
                 }
                 else{
 

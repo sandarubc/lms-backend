@@ -1,6 +1,7 @@
 package lk.ijse.dep9.lmsbackend.api.filter;
 
 
+
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebFilter;
@@ -17,14 +18,17 @@ import java.util.List;
 @WebFilter (urlPatterns = {"/members/*","/books/*"})
 public class CorsFilter extends HttpFilter {
 
+
     private List<String> origins;
 
     @Override
     public void init() throws ServletException {
 
 
-        String origin = getFilterConfig().getInitParameter("origins");
-        origins = Arrays.asList(origin.split(", "));
+//        String origin = getFilterConfig().getInitParameter("origins").trim();
+//        System.out.println(origin);
+//        origins = Arrays.asList(origin.split(", "));
+//        System.out.println(origins);
     }
 
     @Override
